@@ -49,7 +49,7 @@ const PlaceOrder = () => {
         const checkoutUrl = response.data.checkoutUrl;
         // console.log(response);
         
-        // console.log(checkoutUrl);
+        console.log(checkoutUrl);
         
         if (checkoutUrl) {
             window.location.href = checkoutUrl; // Redirect to payment/checkout page
@@ -116,21 +116,23 @@ const PlaceOrder = () => {
             <div>
                 <div className="cart-total-details">
                     <p>Subtotal</p>
-                    <p>{getTotalCartAmount()}</p>
+                    <p>₹{getTotalCartAmount()}</p>
                 </div>
                 <hr />
                 <div className="cart-total-details">
                     <p>Delivery fee</p>
-                    <p>{getTotalCartAmount()===0?"":2}</p>
+                    <p>₹{getTotalCartAmount()===0?"":30}</p>
                     </div>
                     <hr />
                 <div className="cart-total-details">
                     <b>Total</b>
-                    <b>{getTotalCartAmount()===0?"":getTotalCartAmount()+2}</b>
+                    <b>₹{getTotalCartAmount()===0?"":getTotalCartAmount()+30}</b>
                 </div>
             </div>
-                <button type='submit' >PROCEED TO Payment</button>
+                <button  type='submit' >Place Order</button>
+
         </div>
+        <p>note only cash on delivery available</p>
         </div>
       
     </form>

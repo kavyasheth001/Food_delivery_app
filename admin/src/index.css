@@ -8,7 +8,13 @@
 body{
   min-height: 100vh;
   background-color: #FCFCFC;
+  
 }
+/* Disable horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}
+
 a{
   text-decoration: none;
   color: inherit;

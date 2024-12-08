@@ -1,0 +1,5 @@
+{
+    "git.confirmEmptyCommits": true,
+    "git.confirmSync": true,
+    "git.enabled": true
+}
