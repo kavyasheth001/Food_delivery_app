@@ -7,7 +7,7 @@ import userModel from '../models/userModel.js'
 // placing order for frontend
 
 const placeOrder = async (req,res) =>{
-    const frontend_url ="https://resto-pqd8.onrender.com/"
+    const frontend_url ="https://resto-pqd8.onrender.com"
 
     try {
         const newOrder = new orderModel({
